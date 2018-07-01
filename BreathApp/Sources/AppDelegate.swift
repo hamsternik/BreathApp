@@ -22,8 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let rootStoryboard = UIStoryboard(name: "Breath", bundle: .main)
-        let rootViewController = rootStoryboard.instantiateViewController(withIdentifier: "BreathViewController")
+        let rootViewController = BreathConfigurator(storyboard: UIStoryboard(
+            name: BreathConfigurator.Constants.storyboardTitle,
+            bundle: .main
+        )).makeModule()
+        
         window?.rootViewController = rootViewController
         
         return true

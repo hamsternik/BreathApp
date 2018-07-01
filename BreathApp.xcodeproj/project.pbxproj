@@ -13,6 +13,9 @@
 		62918F5220E96B6900A7C979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62918F5020E96B6900A7C979 /* LaunchScreen.storyboard */; };
 		62918F5D20E96D3400A7C979 /* AnimationPhases-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 62918F5C20E96D3400A7C979 /* AnimationPhases-1.json */; };
 		62918F6220E96DDD00A7C979 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6120E96DDD00A7C979 /* BreathViewController.swift */; };
+		62918F6520E97BE800A7C979 /* BreathPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6420E97BE800A7C979 /* BreathPresenter.swift */; };
+		62918F6720E97C1500A7C979 /* BreathViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6620E97C1500A7C979 /* BreathViewInterface.swift */; };
+		62918F6A20E97CC800A7C979 /* BreathConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6920E97CC800A7C979 /* BreathConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		62918F5320E96B6900A7C979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62918F5C20E96D3400A7C979 /* AnimationPhases-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "AnimationPhases-1.json"; sourceTree = "<group>"; };
 		62918F6120E96DDD00A7C979 /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
+		62918F6420E97BE800A7C979 /* BreathPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPresenter.swift; sourceTree = "<group>"; };
+		62918F6620E97C1500A7C979 /* BreathViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewInterface.swift; sourceTree = "<group>"; };
+		62918F6920E97CC800A7C979 /* BreathConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 		62918F5F20E96D7A00A7C979 /* Breath */ = {
 			isa = PBXGroup;
 			children = (
+				62918F6820E97CBC00A7C979 /* Configurator */,
+				62918F6320E97BD800A7C979 /* Presenter */,
 				62918F6020E96D8F00A7C979 /* View */,
 			);
 			path = Breath;
@@ -110,9 +118,26 @@
 			isa = PBXGroup;
 			children = (
 				62918F4B20E96B6800A7C979 /* Breath.storyboard */,
+				62918F6620E97C1500A7C979 /* BreathViewInterface.swift */,
 				62918F6120E96DDD00A7C979 /* BreathViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		62918F6320E97BD800A7C979 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				62918F6420E97BE800A7C979 /* BreathPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		62918F6820E97CBC00A7C979 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				62918F6920E97CC800A7C979 /* BreathConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62918F6A20E97CC800A7C979 /* BreathConfigurator.swift in Sources */,
 				62918F6220E96DDD00A7C979 /* BreathViewController.swift in Sources */,
+				62918F6520E97BE800A7C979 /* BreathPresenter.swift in Sources */,
+				62918F6720E97C1500A7C979 /* BreathViewInterface.swift in Sources */,
 				62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
