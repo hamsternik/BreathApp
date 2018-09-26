@@ -36,3 +36,11 @@ extension AnimationPhase: Decodable {
     }
     
 }
+
+extension Array where Element == AnimationPhase {
+    
+    var duration: TimeInterval {
+        return self.reduce(0) { $0 + $1.duration }
+    }
+    
+}

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4338A91A215BD42A00A621BF /* phases.json in Resources */ = {isa = PBXBuildFile; fileRef = 4338A919215BD42A00A621BF /* phases.json */; };
 		4338A91D215BD4E900A621BF /* AnimationPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A91C215BD4E900A621BF /* AnimationPhase.swift */; };
+		4338A927215BF1C400A621BF /* BreathInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A926215BF1C400A621BF /* BreathInteractorInterface.swift */; };
+		4338A929215BF1F700A621BF /* BreathInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A928215BF1F700A621BF /* BreathInteractor.swift */; };
 		62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F4720E96B6800A7C979 /* AppDelegate.swift */; };
 		62918F4D20E96B6800A7C979 /* Breath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62918F4B20E96B6800A7C979 /* Breath.storyboard */; };
 		62918F4F20E96B6900A7C979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62918F4E20E96B6900A7C979 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		4338A919215BD42A00A621BF /* phases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phases.json; sourceTree = "<group>"; };
 		4338A91C215BD4E900A621BF /* AnimationPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPhase.swift; sourceTree = "<group>"; };
+		4338A926215BF1C400A621BF /* BreathInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractorInterface.swift; sourceTree = "<group>"; };
+		4338A928215BF1F700A621BF /* BreathInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractor.swift; sourceTree = "<group>"; };
 		62918F4420E96B6800A7C979 /* BreathApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62918F4720E96B6800A7C979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62918F4C20E96B6800A7C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Breath.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4338A925215BF1A000A621BF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4338A926215BF1C400A621BF /* BreathInteractorInterface.swift */,
+				4338A928215BF1F700A621BF /* BreathInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		6160FE507BBD577063D84DBC /* Frameworks */ = {
@@ -142,8 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				62918F6820E97CBC00A7C979 /* Configurator */,
-				62918F6320E97BD800A7C979 /* Presenter */,
 				62918F6020E96D8F00A7C979 /* View */,
+				4338A925215BF1A000A621BF /* Interactor */,
+				62918F6320E97BD800A7C979 /* Presenter */,
 			);
 			path = Breath;
 			sourceTree = "<group>";
@@ -298,10 +312,12 @@
 			files = (
 				62918F6A20E97CC800A7C979 /* BreathConfigurator.swift in Sources */,
 				62918F6220E96DDD00A7C979 /* BreathViewController.swift in Sources */,
+				4338A929215BF1F700A621BF /* BreathInteractor.swift in Sources */,
 				62918F6520E97BE800A7C979 /* BreathPresenter.swift in Sources */,
 				62918F6720E97C1500A7C979 /* BreathViewInterface.swift in Sources */,
 				4338A91D215BD4E900A621BF /* AnimationPhase.swift in Sources */,
 				62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */,
+				4338A927215BF1C400A621BF /* BreathInteractorInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

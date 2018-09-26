@@ -36,8 +36,11 @@ class BreathConfigurator {
 private extension BreathConfigurator {
     
     func configureModule(with viewController: BreathViewController) {
+        let interactor = BreathInteractor()
+        
         let presenter = BreathPresenter(animations: animations)
         presenter.view = viewController
+        presenter.interactor = interactor
         
         viewController.output = presenter
     }
