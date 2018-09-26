@@ -1,0 +1,16 @@
+PODS:
+  - UIColor_Hex_Swift (4.2.0)
+
+DEPENDENCIES:
+  - UIColor_Hex_Swift (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
+
+PODFILE CHECKSUM: 4204f6aba0efad0b4a7f765d235112959a0874e4
+
+COCOAPODS: 1.5.3

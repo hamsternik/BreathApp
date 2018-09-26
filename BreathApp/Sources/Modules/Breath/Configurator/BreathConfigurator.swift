@@ -16,9 +16,11 @@ class BreathConfigurator {
     }
     
     let storyboard: UIStoryboard
+    let animations: [AnimationPhase]
     
-    init(storyboard: UIStoryboard) {
+    init(storyboard: UIStoryboard, animations: [AnimationPhase]) {
         self.storyboard = storyboard
+        self.animations = animations
     }
     
     func makeModule() -> BreathViewController {
@@ -34,7 +36,7 @@ class BreathConfigurator {
 private extension BreathConfigurator {
     
     func configureModule(with viewController: BreathViewController) {
-        let presenter = BreathPresenter()
+        let presenter = BreathPresenter(animations: animations)
         presenter.view = viewController
         
         viewController.output = presenter

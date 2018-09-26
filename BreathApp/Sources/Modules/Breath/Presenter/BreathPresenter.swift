@@ -13,12 +13,18 @@ class BreathPresenter {
     
     weak var view: BreathViewInput!
     
+    private var animations = [AnimationPhase]()
+    
+    init(animations: [AnimationPhase]) {
+        self.animations = animations
+    }
+    
 }
 
 extension BreathPresenter: BreathViewOutput {
     
     func viewIsReady() {
-        
+        // TBD
     }
     
 }

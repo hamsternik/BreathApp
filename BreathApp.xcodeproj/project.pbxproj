@@ -7,29 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4338A91A215BD42A00A621BF /* phases.json in Resources */ = {isa = PBXBuildFile; fileRef = 4338A919215BD42A00A621BF /* phases.json */; };
+		4338A91D215BD4E900A621BF /* AnimationPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A91C215BD4E900A621BF /* AnimationPhase.swift */; };
 		62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F4720E96B6800A7C979 /* AppDelegate.swift */; };
 		62918F4D20E96B6800A7C979 /* Breath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62918F4B20E96B6800A7C979 /* Breath.storyboard */; };
 		62918F4F20E96B6900A7C979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62918F4E20E96B6900A7C979 /* Assets.xcassets */; };
 		62918F5220E96B6900A7C979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62918F5020E96B6900A7C979 /* LaunchScreen.storyboard */; };
-		62918F5D20E96D3400A7C979 /* AnimationPhases-1.json in Resources */ = {isa = PBXBuildFile; fileRef = 62918F5C20E96D3400A7C979 /* AnimationPhases-1.json */; };
 		62918F6220E96DDD00A7C979 /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6120E96DDD00A7C979 /* BreathViewController.swift */; };
 		62918F6520E97BE800A7C979 /* BreathPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6420E97BE800A7C979 /* BreathPresenter.swift */; };
 		62918F6720E97C1500A7C979 /* BreathViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6620E97C1500A7C979 /* BreathViewInterface.swift */; };
 		62918F6A20E97CC800A7C979 /* BreathConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6920E97CC800A7C979 /* BreathConfigurator.swift */; };
+		AE9DBEF69A5EC2C76FBC9288 /* Pods_BreathApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A19EE2CB7952082C78B96E /* Pods_BreathApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4338A919215BD42A00A621BF /* phases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phases.json; sourceTree = "<group>"; };
+		4338A91C215BD4E900A621BF /* AnimationPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPhase.swift; sourceTree = "<group>"; };
 		62918F4420E96B6800A7C979 /* BreathApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62918F4720E96B6800A7C979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62918F4C20E96B6800A7C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Breath.storyboard; sourceTree = "<group>"; };
 		62918F4E20E96B6900A7C979 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62918F5120E96B6900A7C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62918F5320E96B6900A7C979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62918F5C20E96D3400A7C979 /* AnimationPhases-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "AnimationPhases-1.json"; sourceTree = "<group>"; };
 		62918F6120E96DDD00A7C979 /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
 		62918F6420E97BE800A7C979 /* BreathPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPresenter.swift; sourceTree = "<group>"; };
 		62918F6620E97C1500A7C979 /* BreathViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewInterface.swift; sourceTree = "<group>"; };
 		62918F6920E97CC800A7C979 /* BreathConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathConfigurator.swift; sourceTree = "<group>"; };
+		7CCB2F1D1E5A0D2E112603C5 /* Pods-BreathApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreathApp/Pods-BreathApp.debug.xcconfig"; sourceTree = "<group>"; };
+		97A19EE2CB7952082C78B96E /* Pods_BreathApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F48B26FF368FB58FDF34D6 /* Pods-BreathApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathApp/Pods-BreathApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9DBEF69A5EC2C76FBC9288 /* Pods_BreathApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4338A91B215BD4C100A621BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4338A91C215BD4E900A621BF /* AnimationPhase.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4338A91E215BD5EE00A621BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6160FE507BBD577063D84DBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A19EE2CB7952082C78B96E /* Pods_BreathApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		62918F3B20E96B6800A7C979 = {
 			isa = PBXGroup;
 			children = (
 				62918F4620E96B6800A7C979 /* BreathApp */,
 				62918F4520E96B6800A7C979 /* Products */,
+				63BCE1F1A06A971955323A69 /* Pods */,
+				6160FE507BBD577063D84DBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +116,8 @@
 			children = (
 				62918F4720E96B6800A7C979 /* AppDelegate.swift */,
 				62918F5E20E96D4600A7C979 /* Modules */,
+				4338A91E215BD5EE00A621BF /* Services */,
+				4338A91B215BD4C100A621BF /* Models */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -91,7 +125,7 @@
 		62918F5B20E96D3400A7C979 /* AnimationPhases */ = {
 			isa = PBXGroup;
 			children = (
-				62918F5C20E96D3400A7C979 /* AnimationPhases-1.json */,
+				4338A919215BD42A00A621BF /* phases.json */,
 			);
 			path = AnimationPhases;
 			sourceTree = "<group>";
@@ -140,6 +174,15 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		63BCE1F1A06A971955323A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CCB2F1D1E5A0D2E112603C5 /* Pods-BreathApp.debug.xcconfig */,
+				C6F48B26FF368FB58FDF34D6 /* Pods-BreathApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62918F5620E96B6900A7C979 /* Build configuration list for PBXNativeTarget "BreathApp" */;
 			buildPhases = (
+				E32FA5DADA12B2CEC7055F57 /* [CP] Check Pods Manifest.lock */,
 				62918F4020E96B6800A7C979 /* Sources */,
 				62918F4120E96B6800A7C979 /* Frameworks */,
 				62918F4220E96B6800A7C979 /* Resources */,
+				74F99FEBF3AFCD9630370F7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,14 +243,53 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62918F5D20E96D3400A7C979 /* AnimationPhases-1.json in Resources */,
 				62918F5220E96B6900A7C979 /* LaunchScreen.storyboard in Resources */,
 				62918F4F20E96B6900A7C979 /* Assets.xcassets in Resources */,
 				62918F4D20E96B6800A7C979 /* Breath.storyboard in Resources */,
+				4338A91A215BD42A00A621BF /* phases.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74F99FEBF3AFCD9630370F7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BreathApp/Pods-BreathApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BreathApp/Pods-BreathApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32FA5DADA12B2CEC7055F57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreathApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		62918F4020E96B6800A7C979 /* Sources */ = {
@@ -216,6 +300,7 @@
 				62918F6220E96DDD00A7C979 /* BreathViewController.swift in Sources */,
 				62918F6520E97BE800A7C979 /* BreathPresenter.swift in Sources */,
 				62918F6720E97C1500A7C979 /* BreathViewInterface.swift in Sources */,
+				4338A91D215BD4E900A621BF /* AnimationPhase.swift in Sources */,
 				62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +443,7 @@
 		};
 		62918F5720E96B6900A7C979 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CCB2F1D1E5A0D2E112603C5 /* Pods-BreathApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +463,7 @@
 		};
 		62918F5820E96B6900A7C979 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6F48B26FF368FB58FDF34D6 /* Pods-BreathApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -22,14 +22,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         
-        let rootViewController = BreathConfigurator(storyboard: UIStoryboard(
-            name: BreathConfigurator.Constants.storyboardTitle,
-            bundle: .main
-        )).makeModule()
+        var animations = [AnimationPhase]()
+        do {
+            animations = try breathAnimations() ?? []
+        } catch {
+            // TODO: Could present alert error dialog.
+            print("Exception message: \(error.localizedDescription)")
+        }
+        
+        let rootViewController = BreathConfigurator(
+            storyboard: UIStoryboard(
+                name: BreathConfigurator.Constants.storyboardTitle,
+                bundle: .main
+            ),
+            animations: animations
+        ).makeModule()
         
         window?.rootViewController = rootViewController
         
         return true
     }
 
+}
+
+extension AppDelegate {
+    
+    func breathAnimations() throws -> [AnimationPhase]? {
+        let decoder = JSONDecoder()
+        let resourceURL = Bundle.main.url(forResource: "phases", withExtension: "json")
+        let resourceData = try resourceURL.flatMap { try Data.init(contentsOf: $0) }
+        return try resourceData.flatMap { try decoder.decode([AnimationPhase].self, from: $0) }
+    }
+    
 }

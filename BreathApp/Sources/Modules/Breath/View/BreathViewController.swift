@@ -27,5 +27,4 @@ class BreathViewController: UIViewController {
 
 
 extension BreathViewController: BreathViewInput {
-    
 }
