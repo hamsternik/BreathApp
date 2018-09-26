@@ -42,6 +42,8 @@ private extension BreathConfigurator {
         presenter.view = viewController
         presenter.interactor = interactor
         
+        interactor.output = presenter
+        
         viewController.output = presenter
     }
     
