@@ -38,21 +38,15 @@ class BreathViewController: UIViewController {
 extension BreathViewController: BreathViewInput {
     
     func setAnimationType(_ animationType: String?) {
-        DispatchQueue.main.async {
-            self.animationTypeLabel.text = animationType
-        }
+        self.animationTypeLabel.text = animationType
     }
     
     func setAnimationRemainingTime(_ remainingTime: String?) {
-        DispatchQueue.main.async {
-            self.animationRemainingTimeLabel.text = remainingTime
-        }
+        self.animationRemainingTimeLabel.text = remainingTime
     }
     
     func setAllAnimationsRemainingTime(_ remainingTime: String?) {
-        DispatchQueue.main.async {
-            self.totalAnimationRemainingTimeLabel.text = remainingTime
-        }
+        self.totalAnimationRemainingTimeLabel.text = remainingTime
     }
     
     func setAnimationScaleFactor(_ scale: CGFloat, duration: TimeInterval) {
@@ -62,9 +56,7 @@ extension BreathViewController: BreathViewInput {
     }
     
     func setAnimationColor(_ color: UIColor) {
-        DispatchQueue.main.async {
-            self.animatedSquareView.backgroundColor = color
-        }
+        self.animatedSquareView.backgroundColor = color
     }
     
 }

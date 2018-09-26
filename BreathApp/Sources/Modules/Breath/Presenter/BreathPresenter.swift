@@ -11,8 +11,14 @@ import Foundation
 
 class BreathPresenter {
     
+    enum Constants {
+        static let idleStateDuration: TimeInterval = 0.0
+    }
+    
     weak var view: BreathViewInput!
     var interactor: BreathInteractorInput!
+    
+    var state: BreathViewState = .idle(duration: Constants.idleStateDuration)
     
     private var animations = [AnimationPhase]()
     
@@ -25,11 +31,18 @@ class BreathPresenter {
 extension BreathPresenter: BreathViewOutput {
     
     func viewIsReady() {
-        // TBD
+        // FIXME: Bad idea to set up `duration` from the static constant
+        state.viewModel.apply(on: view, duration: Constants.idleStateDuration)
     }
     
     func didTapOnSquaredView() {
         interactor.execute(animations: animations)
+        let countdown = Countdown(duration: animations.duration)
+        countdown.fire { [view] (remainingTime) in
+            // FIXME: Should implement specific `formatter` and convert raw value into user-friendly time format
+            let remainingTimeString = "\(remainingTime)"
+            view?.setAllAnimationsRemainingTime(remainingTimeString)
+        }
     }
     
 }
@@ -37,7 +50,8 @@ extension BreathPresenter: BreathViewOutput {
 extension BreathPresenter: BreathInteractorOutput {
     
     func didExecuteAnimationPhase(_ animation: AnimationPhase) {
-        // TODO: There's an entry point to run each input animation step read from .json
+        state = .active(phase: animation)
+        state.viewModel.apply(on: view, duration: animation.duration)
     }
     
 }
