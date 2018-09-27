@@ -18,12 +18,16 @@ class BreathInteractor {
 extension BreathInteractor: BreathInteractorInput {
     
     func execute(animations: [AnimationPhase]) {
-        animations.forEach { animation in
-            // FIXME: shouldn't run all animations one-by-one, must be another mechanism
-            // to run each animation phase regarding with the previous animations sum duration.
-            Timer.scheduledTimer(withTimeInterval: animation.duration, repeats: true) { [unowned self] _ in
-                self.output.didExecuteAnimationPhase(animation)
-            }
+        guard animations.count > 0 else {
+            output.didFinishExecuteAllAnimations()
+            return
+        }
+        
+        var animations = animations
+        let currentAnimation = animations.removeFirst()
+        output.didExecuteAnimationPhase(currentAnimation)
+        Timer.scheduledTimer(withTimeInterval: currentAnimation.duration, repeats: false) { [weak self] _ in
+            self?.execute(animations: animations)
         }
     }
     

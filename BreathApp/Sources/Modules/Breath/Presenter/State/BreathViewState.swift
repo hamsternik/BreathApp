@@ -27,13 +27,7 @@ extension BreathViewState {
     }
     
     private func makeIdleStateViewModel(with duration: TimeInterval) -> BreathViewModel {
-        return BreathViewModel(
-            animationType: nil,
-            animationRemainingTime: nil,
-            totalRemainingTime: nil,
-            scaleFactor: 0.75,
-            backgroundColor: UIColor("#0x7A83F2", defaultColor: .white)
-        )
+        return .idleBreathViewStateViewModel
     }
     
     private func makeActiveStateViewModel(with animationPhase: AnimationPhase) -> BreathViewModel {
@@ -47,9 +41,9 @@ extension BreathViewState {
         
         switch animationPhase.type {
         case .exhale:
-            activeViewModel.scaleFactor = 1.0
-        case .inhale:
             activeViewModel.scaleFactor = 0.5
+        case .inhale:
+            activeViewModel.scaleFactor = 1.0
         case .hold:
             break
         }

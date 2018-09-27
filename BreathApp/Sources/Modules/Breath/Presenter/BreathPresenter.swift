@@ -12,13 +12,15 @@ import Foundation
 class BreathPresenter {
     
     enum Constants {
-        static let idleStateDuration: TimeInterval = 0.0
+        // FIXME: Bad idea to set up `duration` from the static constant
+        static let idleStateFirstScaleDuration: TimeInterval = 0.0
+        static let idleStateLastScaleDuration: TimeInterval = 0.5
     }
     
     weak var view: BreathViewInput!
     var interactor: BreathInteractorInput!
     
-    var state: BreathViewState = .idle(duration: Constants.idleStateDuration)
+    var state: BreathViewState = .idle(duration: Constants.idleStateFirstScaleDuration)
     
     private var animations = [AnimationPhase]()
     
@@ -31,8 +33,7 @@ class BreathPresenter {
 extension BreathPresenter: BreathViewOutput {
     
     func viewIsReady() {
-        // FIXME: Bad idea to set up `duration` from the static constant
-        state.viewModel.apply(on: view, duration: Constants.idleStateDuration)
+        state.viewModel.apply(on: view, duration: Constants.idleStateFirstScaleDuration)
     }
     
     func didTapOnSquaredView() {
@@ -52,6 +53,11 @@ extension BreathPresenter: BreathInteractorOutput {
     func didExecuteAnimationPhase(_ animation: AnimationPhase) {
         state = .active(phase: animation)
         state.viewModel.apply(on: view, duration: animation.duration)
+    }
+    
+    func didFinishExecuteAllAnimations() {
+        state = .idle(duration: Constants.idleStateLastScaleDuration)
+        state.viewModel.apply(on: view, duration: Constants.idleStateLastScaleDuration)
     }
     
 }

@@ -19,5 +19,6 @@ protocol BreathInteractorInput {
 protocol BreathInteractorOutput: class {
     
     func didExecuteAnimationPhase(_ animation: AnimationPhase)
+    func didFinishExecuteAllAnimations()
     
 }

@@ -21,11 +21,23 @@ struct BreathViewModel {
 extension BreathViewModel {
     
     func apply(on view: BreathViewInput, duration: TimeInterval) {
-        view.setAnimationType(animationType)
-        view.setAnimationRemainingTime(animationRemainingTime)
-        view.setAllAnimationsRemainingTime(totalRemainingTime)
+        animationType.map { view.setAnimationType($0) }
+        animationRemainingTime.map { view.setAnimationRemainingTime($0) }
+        totalRemainingTime.map { view.setAllAnimationsRemainingTime($0) }
         scaleFactor.map { view.setAnimationScaleFactor($0, duration: duration) }
         view.setAnimationColor(backgroundColor)
     }
+    
+}
+
+extension BreathViewModel {
+    
+    static let idleBreathViewStateViewModel = BreathViewModel(
+        animationType: "tap here".uppercased(),
+        animationRemainingTime: "to breath".uppercased(),
+        totalRemainingTime: nil,
+        scaleFactor: 0.75,
+        backgroundColor: UIColor("#7A83F2", defaultColor: .white)
+    )
     
 }
