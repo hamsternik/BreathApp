@@ -22,7 +22,12 @@ extension BreathViewModel {
     
     func apply(on view: BreathViewInput, duration: TimeInterval) {
         animationType.map { view.setAnimationType($0) }
-        animationRemainingTime.map { view.setAnimationRemainingTime($0) }
+        if animationRemainingTime != nil {
+            Countdown(duration: duration).fire { (remainingTime) in
+                view.setAnimationRemainingTime("00:0\(Int(remainingTime))")
+            }
+        }
+        
         totalRemainingTime.map { view.setAllAnimationsRemainingTime($0) }
         scaleFactor.map { view.setAnimationScaleFactor($0, duration: duration) }
         view.setAnimationColor(backgroundColor)
