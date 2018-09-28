@@ -16,6 +16,15 @@
 		4338A931215C1B7E00A621BF /* BreathViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A930215C1B7E00A621BF /* BreathViewState.swift */; };
 		4338A936215C247D00A621BF /* BreathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A935215C247D00A621BF /* BreathViewModel.swift */; };
 		4338A938215D513400A621BF /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A937215D513400A621BF /* DispatchQueue+Extensions.swift */; };
+		4338A950215E8FF300A621BF /* CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A94F215E8FF300A621BF /* CountdownTests.swift */; };
+		4338A954215E99C000A621BF /* MockBreathViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A953215E99C000A621BF /* MockBreathViewInput.swift */; };
+		4338A956215E9B4F00A621BF /* MockBreathViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A955215E9B4F00A621BF /* MockBreathViewOutput.swift */; };
+		4338A958215E9BF600A621BF /* MockBreathInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A957215E9BF600A621BF /* MockBreathInteractorInput.swift */; };
+		4338A95A215E9BFF00A621BF /* MockBreathInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A959215E9BFF00A621BF /* MockBreathInteractorOutput.swift */; };
+		4338A95C215E9D3700A621BF /* MockBreathPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A95B215E9D3700A621BF /* MockBreathPresenter.swift */; };
+		4338A95E215EA12E00A621BF /* BreathViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A95D215EA12E00A621BF /* BreathViewTests.swift */; };
+		4338A962215EA16300A621BF /* BreathPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A961215EA16300A621BF /* BreathPresenterTests.swift */; };
+		4338A964215EA16C00A621BF /* BreathInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A963215EA16C00A621BF /* BreathInteractorTests.swift */; };
 		62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F4720E96B6800A7C979 /* AppDelegate.swift */; };
 		62918F4D20E96B6800A7C979 /* Breath.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62918F4B20E96B6800A7C979 /* Breath.storyboard */; };
 		62918F4F20E96B6900A7C979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62918F4E20E96B6900A7C979 /* Assets.xcassets */; };
@@ -27,6 +36,16 @@
 		AE9DBEF69A5EC2C76FBC9288 /* Pods_BreathApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A19EE2CB7952082C78B96E /* Pods_BreathApp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4338A942215E8F6E00A621BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62918F3C20E96B6800A7C979 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62918F4320E96B6800A7C979;
+			remoteInfo = BreathApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4338A919215BD42A00A621BF /* phases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phases.json; sourceTree = "<group>"; };
 		4338A91C215BD4E900A621BF /* AnimationPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPhase.swift; sourceTree = "<group>"; };
@@ -37,6 +56,17 @@
 		4338A930215C1B7E00A621BF /* BreathViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewState.swift; sourceTree = "<group>"; };
 		4338A935215C247D00A621BF /* BreathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewModel.swift; sourceTree = "<group>"; };
 		4338A937215D513400A621BF /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		4338A93D215E8F6E00A621BF /* BreathAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4338A941215E8F6E00A621BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4338A94F215E8FF300A621BF /* CountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTests.swift; sourceTree = "<group>"; };
+		4338A953215E99C000A621BF /* MockBreathViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathViewInput.swift; sourceTree = "<group>"; };
+		4338A955215E9B4F00A621BF /* MockBreathViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathViewOutput.swift; sourceTree = "<group>"; };
+		4338A957215E9BF600A621BF /* MockBreathInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathInteractorInput.swift; sourceTree = "<group>"; };
+		4338A959215E9BFF00A621BF /* MockBreathInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathInteractorOutput.swift; sourceTree = "<group>"; };
+		4338A95B215E9D3700A621BF /* MockBreathPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathPresenter.swift; sourceTree = "<group>"; };
+		4338A95D215EA12E00A621BF /* BreathViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewTests.swift; sourceTree = "<group>"; };
+		4338A961215EA16300A621BF /* BreathPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPresenterTests.swift; sourceTree = "<group>"; };
+		4338A963215EA16C00A621BF /* BreathInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractorTests.swift; sourceTree = "<group>"; };
 		62918F4420E96B6800A7C979 /* BreathApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62918F4720E96B6800A7C979 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62918F4C20E96B6800A7C979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Breath.storyboard; sourceTree = "<group>"; };
@@ -53,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4338A93A215E8F6E00A621BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62918F4120E96B6800A7C979 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,8 +128,8 @@
 		4338A92A215C01B000A621BF /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				4338A92B215C01BC00A621BF /* Countdown.swift */,
 				4338A92D215C050C00A621BF /* Action.swift */,
+				4338A92B215C01BC00A621BF /* Countdown.swift */,
 				4338A937215D513400A621BF /* DispatchQueue+Extensions.swift */,
 			);
 			path = Common;
@@ -114,6 +151,55 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4338A93E215E8F6E00A621BF /* BreathAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4338A94A215E8F9600A621BF /* Common */,
+				4338A949215E8F8F00A621BF /* Mocks */,
+				4338A947215E8F7F00A621BF /* Modules */,
+				4338A941215E8F6E00A621BF /* Info.plist */,
+			);
+			path = BreathAppTests;
+			sourceTree = "<group>";
+		};
+		4338A947215E8F7F00A621BF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4338A948215E8F8900A621BF /* Breath */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4338A948215E8F8900A621BF /* Breath */ = {
+			isa = PBXGroup;
+			children = (
+				4338A95D215EA12E00A621BF /* BreathViewTests.swift */,
+				4338A961215EA16300A621BF /* BreathPresenterTests.swift */,
+				4338A963215EA16C00A621BF /* BreathInteractorTests.swift */,
+			);
+			path = Breath;
+			sourceTree = "<group>";
+		};
+		4338A949215E8F8F00A621BF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4338A953215E99C000A621BF /* MockBreathViewInput.swift */,
+				4338A955215E9B4F00A621BF /* MockBreathViewOutput.swift */,
+				4338A957215E9BF600A621BF /* MockBreathInteractorInput.swift */,
+				4338A959215E9BFF00A621BF /* MockBreathInteractorOutput.swift */,
+				4338A95B215E9D3700A621BF /* MockBreathPresenter.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4338A94A215E8F9600A621BF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4338A94F215E8FF300A621BF /* CountdownTests.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		6160FE507BBD577063D84DBC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				62918F4620E96B6800A7C979 /* BreathApp */,
+				4338A93E215E8F6E00A621BF /* BreathAppTests */,
 				62918F4520E96B6800A7C979 /* Products */,
 				63BCE1F1A06A971955323A69 /* Pods */,
 				6160FE507BBD577063D84DBC /* Frameworks */,
@@ -136,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				62918F4420E96B6800A7C979 /* BreathApp.app */,
+				4338A93D215E8F6E00A621BF /* BreathAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,6 +327,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4338A93C215E8F6E00A621BF /* BreathAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4338A944215E8F6E00A621BF /* Build configuration list for PBXNativeTarget "BreathAppTests" */;
+			buildPhases = (
+				4338A939215E8F6E00A621BF /* Sources */,
+				4338A93A215E8F6E00A621BF /* Frameworks */,
+				4338A93B215E8F6E00A621BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4338A943215E8F6E00A621BF /* PBXTargetDependency */,
+			);
+			name = BreathAppTests;
+			productName = BreathAppTests;
+			productReference = 4338A93D215E8F6E00A621BF /* BreathAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		62918F4320E96B6800A7C979 /* BreathApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62918F5620E96B6900A7C979 /* Build configuration list for PBXNativeTarget "BreathApp" */;
@@ -264,10 +370,15 @@
 		62918F3C20E96B6800A7C979 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Nikita Khomitsevich";
 				TargetAttributes = {
+					4338A93C215E8F6E00A621BF = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = 62918F4320E96B6800A7C979;
+					};
 					62918F4320E96B6800A7C979 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -287,11 +398,19 @@
 			projectRoot = "";
 			targets = (
 				62918F4320E96B6800A7C979 /* BreathApp */,
+				4338A93C215E8F6E00A621BF /* BreathAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4338A93B215E8F6E00A621BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62918F4220E96B6800A7C979 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +464,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4338A939215E8F6E00A621BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4338A964215EA16C00A621BF /* BreathInteractorTests.swift in Sources */,
+				4338A95C215E9D3700A621BF /* MockBreathPresenter.swift in Sources */,
+				4338A950215E8FF300A621BF /* CountdownTests.swift in Sources */,
+				4338A958215E9BF600A621BF /* MockBreathInteractorInput.swift in Sources */,
+				4338A954215E99C000A621BF /* MockBreathViewInput.swift in Sources */,
+				4338A95A215E9BFF00A621BF /* MockBreathInteractorOutput.swift in Sources */,
+				4338A956215E9B4F00A621BF /* MockBreathViewOutput.swift in Sources */,
+				4338A962215EA16300A621BF /* BreathPresenterTests.swift in Sources */,
+				4338A95E215EA12E00A621BF /* BreathViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62918F4020E96B6800A7C979 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +502,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4338A943215E8F6E00A621BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62918F4320E96B6800A7C979 /* BreathApp */;
+			targetProxy = 4338A942215E8F6E00A621BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		62918F4B20E96B6800A7C979 /* Breath.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -387,6 +530,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4338A945215E8F6E00A621BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5B4S79D6V;
+				INFOPLIST_FILE = BreathAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamsternik.BreathAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreathApp.app/BreathApp";
+			};
+			name = Debug;
+		};
+		4338A946215E8F6E00A621BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5B4S79D6V;
+				INFOPLIST_FILE = BreathAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamsternik.BreathAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreathApp.app/BreathApp";
+			};
+			name = Release;
+		};
 		62918F5420E96B6900A7C979 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,6 +735,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4338A944215E8F6E00A621BF /* Build configuration list for PBXNativeTarget "BreathAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4338A945215E8F6E00A621BF /* Debug */,
+				4338A946215E8F6E00A621BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		62918F3F20E96B6800A7C979 /* Build configuration list for PBXProject "BreathApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
