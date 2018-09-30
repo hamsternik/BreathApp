@@ -24,13 +24,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0QJ-ez-Ph5" userLabel="Content Stack View">
                                         <rect key="frame" x="54.5" y="77.5" width="91" height="45"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP HERE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6t-62-c7a" userLabel="Animation Type Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP HERE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6t-62-c7a" userLabel="Animation Type Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO BREATH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmF-xv-DuM" userLabel="Animation Remaining Time Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO BREATH" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmF-xv-DuM" userLabel="Animation Remaining Time Label">
                                                 <rect key="frame" x="0.0" y="24.5" width="91" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -39,7 +39,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.34901960780000002" green="0.52549019610000003" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="0QJ-ez-Ph5" firstAttribute="centerX" secondItem="jAw-Sc-IPJ" secondAttribute="centerX" id="2VU-Hg-fTi"/>
                                     <constraint firstAttribute="width" constant="200" id="2kj-Xp-0Y1"/>
@@ -48,16 +48,12 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wAH-XA-lUL" userLabel="General Countdown Stack View">
-                                <rect key="frame" x="147.5" y="598" width="80" height="49"/>
+                                <rect key="frame" x="147.5" y="606" width="80" height="41"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ham-j6-trC" userLabel="Title Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9P-oD-4P9" userLabel="Total Countdown Label">
-                                        <rect key="frame" x="17" y="28.5" width="46" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9P-oD-4P9" userLabel="Total Countdown Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="41"/>
+                                        <string key="text">Remaining
+00:00</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -75,9 +71,9 @@
                         <viewLayoutGuide key="safeArea" id="5wM-al-VZf"/>
                     </view>
                     <connections>
-                        <outlet property="animatedSquareView" destination="jAw-Sc-IPJ" id="MYc-Ub-i17"/>
                         <outlet property="animationRemainingTimeLabel" destination="RmF-xv-DuM" id="oWF-Pg-DNq"/>
                         <outlet property="animationTypeLabel" destination="Z6t-62-c7a" id="Don-xg-Age"/>
+                        <outlet property="breathingSquaredView" destination="jAw-Sc-IPJ" id="JuJ-U0-PNi"/>
                         <outlet property="totalAnimationRemainingTimeLabel" destination="X9P-oD-4P9" id="ZMz-dO-rI6"/>
                     </connections>
                 </viewController>

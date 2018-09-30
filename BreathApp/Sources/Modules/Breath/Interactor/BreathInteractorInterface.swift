@@ -12,12 +12,14 @@ protocol BreathInteractorInput {
     
     var output: BreathInteractorOutput! { get set }
     
+    func performTransition(with duration: TimeInterval)
     func execute(animations: [AnimationPhase])
     
 }
 
 protocol BreathInteractorOutput: class {
     
+    func didPerformTransition(with duration: TimeInterval)
     func didExecuteAnimationPhase(_ animation: AnimationPhase)
     func didFinishExecuteAllAnimations()
     

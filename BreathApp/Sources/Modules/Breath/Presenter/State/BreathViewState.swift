@@ -6,49 +6,34 @@
 //  Copyright © 2018 Nikita Khomitsevich. All rights reserved.
 //
 
-import Foundation
-import CoreGraphics
+import UIKit
 import UIColor_Hex_Swift
 
 enum BreathViewState {
-    case idle(duration: TimeInterval)
-    case active(phase: AnimationPhase)
+    
+    case idle
+    case transition(duration: TimeInterval)
+    case animation(phase: AnimationPhase)
 }
 
-extension BreathViewState {
+// MARK: - BreathingSquaredViewModel State ViewModel
+
+extension BreathingSquaredViewModel {
     
-    var viewModel: BreathViewModel {
-        switch self {
-        case .idle(let stateDuration):
-            return makeIdleStateViewModel(with: stateDuration)
-        case .active(let phase):
-            return makeActiveStateViewModel(with: phase)
-        }
-    }
+    static let idleStateViewModel = BreathingSquaredViewModel(
+        animationTypeText: "tap here\n to breath".uppercased(),
+        remainingTime: (value: 0, text: nil),
+        scaleFactor: nil,
+        backgroundColor: UIColor("#FFFC79", defaultColor: .yellow)
+    )
     
-    private func makeIdleStateViewModel(with duration: TimeInterval) -> BreathViewModel {
-        return .idleBreathViewStateViewModel
-    }
-    
-    private func makeActiveStateViewModel(with animationPhase: AnimationPhase) -> BreathViewModel {
-        var activeViewModel = BreathViewModel(
-            animationType: "\(animationPhase.type.rawValue)",
-            animationRemainingTime: "\(animationPhase.duration)",
-            totalRemainingTime: nil, // FIXME: Replace this with a real value
-            scaleFactor: nil, // FIXME: Replace this with a constant
-            backgroundColor: animationPhase.color
+    static func transitionViewStateViewModel(scale: CGFloat, duration: TimeInterval, color: UIColor) -> BreathingSquaredViewModel {
+        return BreathingSquaredViewModel(
+            animationTypeText: nil,
+            remainingTime: (value: duration, text: nil),
+            scaleFactor: scale,
+            backgroundColor: color
         )
-        
-        switch animationPhase.type {
-        case .exhale:
-            activeViewModel.scaleFactor = 0.5
-        case .inhale:
-            activeViewModel.scaleFactor = 1.0
-        case .hold:
-            break
-        }
-        
-        return activeViewModel
     }
     
 }

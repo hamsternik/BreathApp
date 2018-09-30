@@ -6,8 +6,7 @@
 //  Copyright © 2018 Nikita Khomitsevich. All rights reserved.
 //
 
-import UIKit
-import UIColor_Hex_Swift
+import Foundation
 
 struct AnimationPhase: Equatable {
     
@@ -17,7 +16,7 @@ struct AnimationPhase: Equatable {
     
     let type: AnimationPhaseType
     let duration: TimeInterval
-    let color: UIColor
+    let color: String
     
 }
 
@@ -31,8 +30,7 @@ extension AnimationPhase: Decodable {
         let container = try decoder.container(keyedBy: DecodingKeys.self)
         self.type = try container.decode(AnimationPhaseType.self, forKey: .type)
         self.duration = try container.decode(TimeInterval.self, forKey: .duration)
-        let colorHexString = try container.decode(String.self, forKey: .color)
-        self.color = try UIColor(rgba_throws: colorHexString)
+        self.color = try container.decode(String.self, forKey: .color)
     }
     
 }

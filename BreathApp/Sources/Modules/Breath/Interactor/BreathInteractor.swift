@@ -8,14 +8,15 @@
 
 import Foundation
 
-
-class BreathInteractor {
+class BreathInteractor: BreathInteractorInput {
     
     weak var output: BreathInteractorOutput!
     
-}
-
-extension BreathInteractor: BreathInteractorInput {
+    func performTransition(with duration: TimeInterval) {
+        Timer.scheduledTimer(withTimeInterval: duration, repeats: false) { [output] _ in
+            output?.didPerformTransition(with: duration)
+        }
+    }
     
     func execute(animations: [AnimationPhase]) {
         guard animations.count > 0 else {

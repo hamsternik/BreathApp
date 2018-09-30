@@ -8,19 +8,20 @@
 
 import Foundation
 
-
 class BreathPresenter {
     
     enum Constants {
-        // FIXME: Bad idea to set up `duration` from the static constant
-        static let idleStateFirstScaleDuration: TimeInterval = 0.0
-        static let idleStateLastScaleDuration: TimeInterval = 0.5
+        static let transitionScalingDuration: TimeInterval = 0.5
     }
     
     weak var view: BreathViewInput!
     var interactor: BreathInteractorInput!
     
-    var state: BreathViewState = .idle(duration: Constants.idleStateFirstScaleDuration)
+    var state: BreathViewState = .idle {
+        didSet {
+            BreathingSquaredViewModelBuilder().build(for: state).apply(on: view)
+        }
+    }
     
     private var animations = [AnimationPhase]()
     
@@ -33,31 +34,35 @@ class BreathPresenter {
 extension BreathPresenter: BreathViewOutput {
     
     func viewIsReady() {
-        state.viewModel.apply(on: view, duration: Constants.idleStateFirstScaleDuration)
+        BreathingSquaredViewModelBuilder().build(for: state).apply(on: view)
     }
     
     func didTapOnSquaredView() {
-        interactor.execute(animations: animations)
-        let countdown = Countdown(duration: animations.duration)
-        countdown.fire { [view] (remainingTime) in
-            // FIXME: Should implement specific `formatter` and convert raw value into user-friendly time format
-            let remainingTimeString = "\(remainingTime)"
-            view?.setAllAnimationsRemainingTime(remainingTimeString)
-        }
+        interactor.performTransition(with: Constants.transitionScalingDuration)
     }
     
 }
 
 extension BreathPresenter: BreathInteractorOutput {
     
+    func didPerformTransition(with duration: TimeInterval) {
+        state = .transition(duration: duration)
+        
+        interactor.execute(animations: animations)
+        let countdown = Countdown(duration: animations.duration)
+        countdown.fire { [view] (remainingTime) in
+            // FIXME: Should implement specific `formatter` and convert raw value into user-friendly time format
+            let remainingTimeString = "Remaining 00:0\(Int(remainingTime))"
+            view?.setAllAnimationsRemainingTime(remainingTimeString)
+        }
+    }
+    
     func didExecuteAnimationPhase(_ animation: AnimationPhase) {
-        state = .active(phase: animation)
-        state.viewModel.apply(on: view, duration: animation.duration)
+        state = .animation(phase: animation)
     }
     
     func didFinishExecuteAllAnimations() {
-        state = .idle(duration: Constants.idleStateLastScaleDuration)
-        state.viewModel.apply(on: view, duration: Constants.idleStateLastScaleDuration)
+        state = .transition(duration: Constants.transitionScalingDuration)
     }
     
 }

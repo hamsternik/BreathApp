@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4313C7B421602ABB00E75C1D /* BreathingSquaredViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313C7B321602ABB00E75C1D /* BreathingSquaredViewModelBuilder.swift */; };
 		4338A91A215BD42A00A621BF /* phases.json in Resources */ = {isa = PBXBuildFile; fileRef = 4338A919215BD42A00A621BF /* phases.json */; };
 		4338A91D215BD4E900A621BF /* AnimationPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A91C215BD4E900A621BF /* AnimationPhase.swift */; };
 		4338A927215BF1C400A621BF /* BreathInteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A926215BF1C400A621BF /* BreathInteractorInterface.swift */; };
@@ -14,7 +15,7 @@
 		4338A92C215C01BC00A621BF /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A92B215C01BC00A621BF /* Countdown.swift */; };
 		4338A92E215C050C00A621BF /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A92D215C050C00A621BF /* Action.swift */; };
 		4338A931215C1B7E00A621BF /* BreathViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A930215C1B7E00A621BF /* BreathViewState.swift */; };
-		4338A936215C247D00A621BF /* BreathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A935215C247D00A621BF /* BreathViewModel.swift */; };
+		4338A936215C247D00A621BF /* BreathingSquaredViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A935215C247D00A621BF /* BreathingSquaredViewModel.swift */; };
 		4338A938215D513400A621BF /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A937215D513400A621BF /* DispatchQueue+Extensions.swift */; };
 		4338A950215E8FF300A621BF /* CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A94F215E8FF300A621BF /* CountdownTests.swift */; };
 		4338A954215E99C000A621BF /* MockBreathViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A953215E99C000A621BF /* MockBreathViewInput.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4313C7B321602ABB00E75C1D /* BreathingSquaredViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSquaredViewModelBuilder.swift; sourceTree = "<group>"; };
 		4338A919215BD42A00A621BF /* phases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phases.json; sourceTree = "<group>"; };
 		4338A91C215BD4E900A621BF /* AnimationPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationPhase.swift; sourceTree = "<group>"; };
 		4338A926215BF1C400A621BF /* BreathInteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractorInterface.swift; sourceTree = "<group>"; };
@@ -54,7 +56,7 @@
 		4338A92B215C01BC00A621BF /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 		4338A92D215C050C00A621BF /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		4338A930215C1B7E00A621BF /* BreathViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewState.swift; sourceTree = "<group>"; };
-		4338A935215C247D00A621BF /* BreathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewModel.swift; sourceTree = "<group>"; };
+		4338A935215C247D00A621BF /* BreathingSquaredViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingSquaredViewModel.swift; sourceTree = "<group>"; };
 		4338A937215D513400A621BF /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		4338A93D215E8F6E00A621BF /* BreathAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreathAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4338A941215E8F6E00A621BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,19 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4313C7B221602AAD00E75C1D /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				4313C7B321602ABB00E75C1D /* BreathingSquaredViewModelBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		4338A91B215BD4C100A621BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4338A91C215BD4E900A621BF /* AnimationPhase.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		4338A91E215BD5EE00A621BF /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		4338A925215BF1A000A621BF /* Interactor */ = {
@@ -146,7 +149,7 @@
 		4338A934215C247300A621BF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				4338A935215C247D00A621BF /* BreathViewModel.swift */,
+				4338A935215C247D00A621BF /* BreathingSquaredViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -253,7 +256,6 @@
 			children = (
 				62918F4720E96B6800A7C979 /* AppDelegate.swift */,
 				62918F5E20E96D4600A7C979 /* Modules */,
-				4338A91E215BD5EE00A621BF /* Services */,
 				4338A91B215BD4C100A621BF /* Models */,
 				4338A92A215C01B000A621BF /* Common */,
 			);
@@ -301,8 +303,9 @@
 		62918F6320E97BD800A7C979 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				4338A92F215C1B4B00A621BF /* State */,
 				62918F6420E97BE800A7C979 /* BreathPresenter.swift */,
+				4313C7B221602AAD00E75C1D /* Builder */,
+				4338A92F215C1B4B00A621BF /* State */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -486,7 +489,7 @@
 			files = (
 				62918F6A20E97CC800A7C979 /* BreathConfigurator.swift in Sources */,
 				4338A938215D513400A621BF /* DispatchQueue+Extensions.swift in Sources */,
-				4338A936215C247D00A621BF /* BreathViewModel.swift in Sources */,
+				4338A936215C247D00A621BF /* BreathingSquaredViewModel.swift in Sources */,
 				62918F6220E96DDD00A7C979 /* BreathViewController.swift in Sources */,
 				4338A929215BF1F700A621BF /* BreathInteractor.swift in Sources */,
 				4338A92E215C050C00A621BF /* Action.swift in Sources */,
@@ -496,6 +499,7 @@
 				4338A91D215BD4E900A621BF /* AnimationPhase.swift in Sources */,
 				4338A931215C1B7E00A621BF /* BreathViewState.swift in Sources */,
 				62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */,
+				4313C7B421602ABB00E75C1D /* BreathingSquaredViewModelBuilder.swift in Sources */,
 				4338A927215BF1C400A621BF /* BreathInteractorInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
