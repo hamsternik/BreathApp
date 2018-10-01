@@ -11,13 +11,13 @@ import UIKit
 struct BreathingSquaredViewModel {
     
     var animationTypeText: String?
-    var remainingTime: (value: TimeInterval, text: String?)
+    var remainingTime: TimeInterval?
     var scaleFactor: CGFloat?
     var backgroundColor: UIColor?
    
-    private func applyRemainingTimeText(_ text: String?, on view: BreathViewInput) {
-        Countdown(duration: remainingTime.value).fire { remainingTime in
-            view.setAnimationRemainingTime(text)
+    private func applyRemainingTime(_ value: TimeInterval, on view: BreathViewInput) {
+        Countdown(duration: value).fire { remainingTime in
+            view.setAnimationRemainingTime("00:0\(Int(remainingTime))")
         }
     }
     
@@ -27,8 +27,8 @@ extension BreathingSquaredViewModel {
     
     func apply(on view: BreathViewInput) {
         view.setAnimationType(animationTypeText)
-        applyRemainingTimeText(remainingTime.text, on: view)
-        scaleFactor.map { view.setAnimationScaleFactor($0, duration: remainingTime.value) }
+        remainingTime.map { applyRemainingTime($0, on: view) }
+        scaleFactor.map { view.setAnimationScaleFactor($0, duration: remainingTime ?? 0.0) }
         backgroundColor.map { view.setAnimationColor($0) }
     }
     

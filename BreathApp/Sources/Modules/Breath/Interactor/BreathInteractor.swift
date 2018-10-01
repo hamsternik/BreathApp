@@ -13,8 +13,9 @@ class BreathInteractor: BreathInteractorInput {
     weak var output: BreathInteractorOutput!
     
     func performTransition(with duration: TimeInterval) {
+        output.didPerformTransition(with: duration)
         Timer.scheduledTimer(withTimeInterval: duration, repeats: false) { [output] _ in
-            output?.didPerformTransition(with: duration)
+            output?.willExecuteAnimationPhases()
         }
     }
     

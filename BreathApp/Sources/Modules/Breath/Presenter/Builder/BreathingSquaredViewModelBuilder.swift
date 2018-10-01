@@ -13,7 +13,7 @@ class BreathingSquaredViewModelBuilder {
     
     enum Constants {
         static let transitionScaleFactor: CGFloat = 0.75
-        static let transitionBackgroundColor: UIColor = .cyan
+        static let transitionBackgroundColor: UIColor = .lightGray
     }
     
     func build(for state: BreathViewState) -> BreathingSquaredViewModel {
@@ -51,7 +51,7 @@ class BreathingSquaredViewModelBuilder {
         
         return BreathingSquaredViewModel(
             animationTypeText: "\(animationPhase.type.rawValue)".uppercased(),
-            remainingTime: (value: animationPhase.duration, text: "00:0\(Int(animationPhase.duration))"),
+            remainingTime: animationPhase.duration,
             scaleFactor: animationPhaseType(animationPhase.type),
             backgroundColor: UIColor(animationPhase.color, defaultColor: .white)
         )

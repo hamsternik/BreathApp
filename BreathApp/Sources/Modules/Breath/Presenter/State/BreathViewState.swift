@@ -12,6 +12,7 @@ import UIColor_Hex_Swift
 enum BreathViewState {
     
     case idle
+    // FIXME: Add scale factor
     case transition(duration: TimeInterval)
     case animation(phase: AnimationPhase)
 }
@@ -22,7 +23,7 @@ extension BreathingSquaredViewModel {
     
     static let idleStateViewModel = BreathingSquaredViewModel(
         animationTypeText: "tap here\n to breath".uppercased(),
-        remainingTime: (value: 0, text: nil),
+        remainingTime: nil,
         scaleFactor: nil,
         backgroundColor: UIColor("#FFFC79", defaultColor: .yellow)
     )
@@ -30,7 +31,7 @@ extension BreathingSquaredViewModel {
     static func transitionViewStateViewModel(scale: CGFloat, duration: TimeInterval, color: UIColor) -> BreathingSquaredViewModel {
         return BreathingSquaredViewModel(
             animationTypeText: nil,
-            remainingTime: (value: duration, text: nil),
+            remainingTime: duration,
             scaleFactor: scale,
             backgroundColor: color
         )

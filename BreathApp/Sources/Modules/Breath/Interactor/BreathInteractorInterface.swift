@@ -20,6 +20,7 @@ protocol BreathInteractorInput {
 protocol BreathInteractorOutput: class {
     
     func didPerformTransition(with duration: TimeInterval)
+    func willExecuteAnimationPhases()
     func didExecuteAnimationPhase(_ animation: AnimationPhase)
     func didFinishExecuteAllAnimations()
     
