@@ -12,7 +12,8 @@ import CoreGraphics
 class BreathPresenter {
     
     enum Constants {
-        static let transitionScalingDuration: TimeInterval = 1.0
+        static let startTransitionScalingDuration: TimeInterval = 0.75
+        static let endTransitionScalingDuration: TimeInterval = 0.0
         static let startTransitionScaleFactor: CGFloat = 0.75
         static let endTransitionScaleFactor: CGFloat = 1.0
     }
@@ -43,15 +44,18 @@ extension BreathPresenter: BreathViewOutput {
     
     func didTapOnSquaredView() {
         brethingAnimationFinished = false
-        interactor.performTransition(with: Constants.transitionScalingDuration)
+        interactor.performTransition(
+            with: Constants.startTransitionScalingDuration,
+            scale: Constants.startTransitionScaleFactor
+        )
     }
     
 }
 
 extension BreathPresenter: BreathInteractorOutput {
     
-    func didPerformTransition(with duration: TimeInterval) {
-        state = .transition(duration: duration)
+    func didPerformTransition(duration: TimeInterval, scale: CGFloat) {
+        state = .transition(duration: duration, scale: scale)
     }
     
     func willExecuteAnimationPhases() {
@@ -76,7 +80,10 @@ extension BreathPresenter: BreathInteractorOutput {
     
     func didFinishExecuteAllAnimations() {
         brethingAnimationFinished = true
-        interactor.performTransition(with: Constants.transitionScalingDuration)
+        interactor.performTransition(
+            with: Constants.endTransitionScalingDuration,
+            scale: Constants.endTransitionScaleFactor
+        )
     }
     
 }

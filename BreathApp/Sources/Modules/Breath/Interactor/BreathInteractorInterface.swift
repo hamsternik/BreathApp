@@ -7,19 +7,20 @@
 //
 
 import Foundation
+import CoreGraphics
 
 protocol BreathInteractorInput {
     
     var output: BreathInteractorOutput! { get set }
     
-    func performTransition(with duration: TimeInterval)
+    func performTransition(with duration: TimeInterval, scale: CGFloat)
     func execute(animations: [AnimationPhase])
     
 }
 
 protocol BreathInteractorOutput: class {
     
-    func didPerformTransition(with duration: TimeInterval)
+    func didPerformTransition(duration: TimeInterval, scale: CGFloat)
     func willExecuteAnimationPhases()
     func didExecuteAnimationPhase(_ animation: AnimationPhase)
     func didFinishExecuteAllAnimations()

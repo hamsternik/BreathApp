@@ -12,10 +12,15 @@ import XCTest
 class MockBreathPresenter: BreathViewOutput, BreathInteractorOutput {
     
     typealias VoidObserver = () -> Void
+    typealias TransitionObserver = (TimeInterval, CGFloat) -> Void
     typealias AnimationPhaseObserver = (AnimationPhase) -> Void
     
     private(set) var viewIsReadyObserver: VoidObserver = {}
     private(set) var didTapOnSquaredViewObserver: VoidObserver = {}
+    
+    private(set) var didPerformTransitionObserver: TransitionObserver = { _,_  in }
+    private(set) var willExecuteAnimationPhasesObserver: VoidObserver = {}
+    
     private(set) var didExecuteAnimationPhaseObserver: AnimationPhaseObserver = { _ in }
     private(set) var didFinishExecuteAllAnimationsObserver: VoidObserver = {}
     
@@ -30,6 +35,14 @@ class MockBreathPresenter: BreathViewOutput, BreathInteractorOutput {
     }
     
     // MARK: - BreathInteractorOutput
+    
+    func didPerformTransition(duration: TimeInterval, scale: CGFloat) {
+        didPerformTransitionObserver(duration, scale)
+    }
+    
+    func willExecuteAnimationPhases() {
+        willExecuteAnimationPhasesObserver()
+    }
     
     func didExecuteAnimationPhase(_ animation: AnimationPhase) {
         didExecuteAnimationPhaseObserver(animation)

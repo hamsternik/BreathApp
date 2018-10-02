@@ -11,9 +11,14 @@ import XCTest
 
 class MockBreathInteractorInput: BreathInteractorInput {
     
+    private(set) var performTransitionAnimationMockValues: [(duration: TimeInterval, scale: CGFloat)] = []
     private(set) var executedAnimationsMockValues: [AnimationPhase] = []
     
     var output: BreathInteractorOutput!
+    
+    func performTransition(with duration: TimeInterval, scale: CGFloat) {
+        performTransitionAnimationMockValues.append((duration: duration, scale: scale))
+    }
     
     func execute(animations: [AnimationPhase]) {
         executedAnimationsMockValues.append(contentsOf: animations)

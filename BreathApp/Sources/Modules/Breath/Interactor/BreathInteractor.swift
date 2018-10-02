@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import CoreGraphics
 
 class BreathInteractor: BreathInteractorInput {
     
     weak var output: BreathInteractorOutput!
     
-    func performTransition(with duration: TimeInterval) {
-        output.didPerformTransition(with: duration)
+    func performTransition(with duration: TimeInterval, scale: CGFloat) {
+        output.didPerformTransition(duration: duration, scale: scale)
         Timer.scheduledTimer(withTimeInterval: duration, repeats: false) { [output] _ in
             output?.willExecuteAnimationPhases()
         }

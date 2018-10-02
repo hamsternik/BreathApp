@@ -12,8 +12,7 @@ import UIColor_Hex_Swift
 enum BreathViewState {
     
     case idle
-    // FIXME: Add scale factor
-    case transition(duration: TimeInterval)
+    case transition(duration: TimeInterval, scale: CGFloat)
     case animation(phase: AnimationPhase)
 }
 

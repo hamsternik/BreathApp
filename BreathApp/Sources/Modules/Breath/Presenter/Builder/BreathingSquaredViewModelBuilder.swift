@@ -12,7 +12,6 @@ import UIColor_Hex_Swift
 class BreathingSquaredViewModelBuilder {
     
     enum Constants {
-        static let transitionScaleFactor: CGFloat = 0.75
         static let transitionBackgroundColor: UIColor = .lightGray
     }
     
@@ -20,8 +19,8 @@ class BreathingSquaredViewModelBuilder {
         switch state {
         case .idle:
             return makeIdleStateViewModel()
-        case .transition(let duration):
-            return makeTransitionStateViewModel(with: duration)
+        case .transition(let duration, let scale):
+            return makeTransitionStateViewModel(with: duration, scaleFactor: scale)
         case .animation(let phase):
             return makeActiveStateViewModel(with: phase)
         }
@@ -31,9 +30,9 @@ class BreathingSquaredViewModelBuilder {
         return .idleStateViewModel
     }
     
-    private func makeTransitionStateViewModel(with duration: TimeInterval) -> BreathingSquaredViewModel {
+    private func makeTransitionStateViewModel(with duration: TimeInterval, scaleFactor: CGFloat) -> BreathingSquaredViewModel {
         return BreathingSquaredViewModel.transitionViewStateViewModel(
-            scale: Constants.transitionScaleFactor,
+            scale: scaleFactor,
             duration: duration,
             color: Constants.transitionBackgroundColor
         )
