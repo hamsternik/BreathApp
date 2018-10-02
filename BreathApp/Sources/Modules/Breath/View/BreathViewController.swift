@@ -12,10 +12,10 @@ class BreathViewController: UIViewController {
     
     var output: BreathViewOutput!
     
-    @IBOutlet private weak var breathingSquaredView: UIView!
-    @IBOutlet private weak var animationTypeLabel: UILabel!
-    @IBOutlet private weak var animationRemainingTimeLabel: UILabel!
-    @IBOutlet private weak var totalAnimationRemainingTimeLabel: UILabel!
+    @IBOutlet weak var breathingSquaredView: UIView!
+    @IBOutlet weak var animationTypeLabel: UILabel!
+    @IBOutlet weak var animationRemainingTimeLabel: UILabel!
+    @IBOutlet weak var totalAnimationRemainingTimeLabel: UILabel!
     
     lazy var breathActionTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(BreathViewController.didTapOnSquaredView))
     
