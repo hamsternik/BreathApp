@@ -27,11 +27,13 @@ class BreathPresenter {
         }
     }
     
-    private var animations = [AnimationPhase]()
+    private var animations: [AnimationPhase]
+    private var totalRemainingTimeCountdown: Countdown
     private var brethingAnimationFinished: Bool = false
     
-    init(animations: [AnimationPhase]) {
+    init(animations: [AnimationPhase], totalRemainingTimeCountdown: Countdown) {
         self.animations = animations
+        self.totalRemainingTimeCountdown = totalRemainingTimeCountdown
     }
     
 }
@@ -66,8 +68,7 @@ extension BreathPresenter: BreathInteractorOutput {
         }
         
         interactor.execute(animations: animations)
-        let countdown = Countdown(duration: animations.duration)
-        countdown.fire { [view] (remainingTime) in
+        totalRemainingTimeCountdown.fire { [view] (remainingTime) in
             // FIXME: Should implement specific `formatter` and convert raw value into user-friendly time format
             var remainingTimeString = (floor(remainingTime) >= 10) ? "Remaining 00:" : "Remaining 00:0"
             remainingTimeString += "\(Int(remainingTime))"

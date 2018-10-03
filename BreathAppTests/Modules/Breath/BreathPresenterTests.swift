@@ -12,7 +12,7 @@ import XCTest
 class BreathPresenterTests: XCTestCase {
     
     enum Constants {
-        static let animationInterval: TimeInterval = 1.0
+        static let animationInterval: TimeInterval = 0.1
     }
     
     var sut: BreathPresenter!
@@ -20,16 +20,22 @@ class BreathPresenterTests: XCTestCase {
     var interactor: MockBreathInteractorInput!
     
     let mockedAnimationPhases: [AnimationPhase] = [
-        AnimationPhase(type: .exhale, duration: 1.0, color: "#FF00FF"),
-        AnimationPhase(type: .hold, duration: 2.0, color: "#00FFFF"),
-        AnimationPhase(type: .inhale, duration: 3.0, color: "#FFFF00")
+        AnimationPhase(type: .exhale, duration: 0.1, color: "#FF00FF"),
+        AnimationPhase(type: .hold, duration: 0.2, color: "#00FFFF"),
+        AnimationPhase(type: .inhale, duration: 0.3, color: "#FFFF00")
     ]
     
     override func setUp() {
         super.setUp()
         view = MockBreathViewInput()
         interactor = MockBreathInteractorInput()
-        sut = BreathPresenter(animations: mockedAnimationPhases)
+        sut = BreathPresenter(
+            animations: mockedAnimationPhases,
+            totalRemainingTimeCountdown: Countdown(
+                duration: mockedAnimationPhases.duration,
+                interval: Constants.animationInterval
+            )
+        )
         sut.view = view
         sut.interactor = interactor
     }
