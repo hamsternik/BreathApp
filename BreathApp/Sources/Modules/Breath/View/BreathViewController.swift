@@ -21,8 +21,12 @@ class BreathViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        breathingSquaredView.addGestureRecognizer(breathActionTapRecognizer)
         output.viewIsReady()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        breathingSquaredView.addGestureRecognizer(breathActionTapRecognizer)
     }
     
     @objc func didTapOnSquaredView(_ recognizer: UITapGestureRecognizer) {

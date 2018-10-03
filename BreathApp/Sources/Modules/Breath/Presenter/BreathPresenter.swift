@@ -56,6 +56,7 @@ extension BreathPresenter: BreathInteractorOutput {
     
     func didPerformTransition(duration: TimeInterval, scale: CGFloat) {
         state = .transition(duration: duration, scale: scale)
+        view.setAllAnimationsRemainingTime(nil)
     }
     
     func willExecuteAnimationPhases() {

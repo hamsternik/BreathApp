@@ -12,13 +12,15 @@ import XCTest
 class BreathViewTests: XCTestCase {
     
     var sut: BreathViewController!
-    var output: BreathViewOutput!
+    var output: MockBreathViewOutput!
     
     override func setUp() {
         super.setUp()
         sut = BreathViewController()
         output = MockBreathViewOutput()
         sut.output = output
+        
+        sut.loadViewIfNeeded()
     }
     
     override func tearDown() {
@@ -28,6 +30,8 @@ class BreathViewTests: XCTestCase {
     }
     
     func test_setAnimationType_withUpdate_animationTypeLabel_text() {
+        XCTAssertEqual(output.viewIsReadyValue, true)
+        
         let animationTypeLabel = UILabel()
         sut.animationTypeLabel = animationTypeLabel
         let expectation = XCTestExpectation(description: "Expectation: set up the animation type (main thread).")
@@ -44,6 +48,8 @@ class BreathViewTests: XCTestCase {
     }
     
     func test_setAnimationRemainingTime_withUpdate_animationRemainingTimeLabel_text() {
+        XCTAssertEqual(output.viewIsReadyValue, true)
+        
         let remainingTimeLabel = UILabel()
         sut.animationRemainingTimeLabel = remainingTimeLabel
         let expectation = XCTestExpectation(description: "Expectation: set up the animation remaining time (main thread).")
@@ -60,6 +66,8 @@ class BreathViewTests: XCTestCase {
     }
     
     func test_setAllAnimationsRemainingTime_withUpdate_animationRemainingTimeLabel_text() {
+        XCTAssertEqual(output.viewIsReadyValue, true)
+        
         let totalAnimationRemainingTimeLabel = UILabel()
         sut.totalAnimationRemainingTimeLabel = totalAnimationRemainingTimeLabel
         let expectation = XCTestExpectation(description: "Expectation: set up the total remaining time (main thread).")
@@ -76,6 +84,8 @@ class BreathViewTests: XCTestCase {
     }
     
     func test_setAnimationScaleFactor_withUpdate_breathingSquaredView_transform() {
+        XCTAssertEqual(output.viewIsReadyValue, true)
+        
         let breathingSquaredView = UIView()
         sut.breathingSquaredView = breathingSquaredView
         let expectation = XCTestExpectation(description: "Expectation: set up the animated scaling on view (main thread).")
@@ -93,6 +103,8 @@ class BreathViewTests: XCTestCase {
     }
     
     func test_setAnimationColor_withUpdate_breathingSquaredView_backgroundColor() {
+        XCTAssertEqual(output.viewIsReadyValue, true)
+        
         let breathingSquaredView = UIView()
         sut.breathingSquaredView = breathingSquaredView
         let expectation = XCTestExpectation(description: "Expectation: set up the animated view background color (main thread).")

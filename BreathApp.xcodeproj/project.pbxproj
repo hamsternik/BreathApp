@@ -177,8 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				4338A95D215EA12E00A621BF /* BreathViewTests.swift */,
-				4338A961215EA16300A621BF /* BreathPresenterTests.swift */,
 				4338A963215EA16C00A621BF /* BreathInteractorTests.swift */,
+				4338A961215EA16300A621BF /* BreathPresenterTests.swift */,
 			);
 			path = Breath;
 			sourceTree = "<group>";
