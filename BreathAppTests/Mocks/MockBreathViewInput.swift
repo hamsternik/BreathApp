@@ -11,24 +11,27 @@ import XCTest
 
 class MockBreathViewInput: BreathViewInput {
     
-    private(set) var animationTypeMockValues: [String?] = []
-    private(set) var animationRemainingTimeMockValue: [String?] = []
-    private(set) var allAnimationsRemainingTimeMockValues: [String?] = []
+    private(set) var animationTypeMockValues: [String] = []
+    private(set) var animationRemainingTimeMockValues: [String] = []
+    private(set) var allAnimationsRemainingTimeMockValues: [String] = []
     private(set) var animationScaleFactorMockValues: [(scale: CGFloat, duration: TimeInterval)] = []
     private(set) var animationColorMockValue: [UIColor] = []
+    
+    var allAnimationsRemainingTimeObserver: (String?) -> Void = { _ in }
     
     var output: BreathViewOutput!
     
     func setAnimationType(_ animationType: String?) {
-        animationTypeMockValues.append(animationType)
+        animationType.map { animationTypeMockValues.append($0) }
     }
     
     func setAnimationRemainingTime(_ remainingTime: String?) {
-        animationRemainingTimeMockValue.append(remainingTime)
+        remainingTime.map { animationRemainingTimeMockValues.append($0) }
     }
     
     func setAllAnimationsRemainingTime(_ remainingTime: String?) {
-        allAnimationsRemainingTimeMockValues.append(remainingTime)
+        remainingTime.map { allAnimationsRemainingTimeMockValues.append($0) }
+        allAnimationsRemainingTimeObserver(remainingTime)
     }
     
     func setAnimationScaleFactor(_ scale: CGFloat, duration: TimeInterval) {

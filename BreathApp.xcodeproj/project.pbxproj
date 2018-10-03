@@ -22,7 +22,6 @@
 		4338A956215E9B4F00A621BF /* MockBreathViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A955215E9B4F00A621BF /* MockBreathViewOutput.swift */; };
 		4338A958215E9BF600A621BF /* MockBreathInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A957215E9BF600A621BF /* MockBreathInteractorInput.swift */; };
 		4338A95A215E9BFF00A621BF /* MockBreathInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A959215E9BFF00A621BF /* MockBreathInteractorOutput.swift */; };
-		4338A95C215E9D3700A621BF /* MockBreathPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A95B215E9D3700A621BF /* MockBreathPresenter.swift */; };
 		4338A95E215EA12E00A621BF /* BreathViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A95D215EA12E00A621BF /* BreathViewTests.swift */; };
 		4338A962215EA16300A621BF /* BreathPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A961215EA16300A621BF /* BreathPresenterTests.swift */; };
 		4338A964215EA16C00A621BF /* BreathInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4338A963215EA16C00A621BF /* BreathInteractorTests.swift */; };
@@ -65,7 +64,6 @@
 		4338A955215E9B4F00A621BF /* MockBreathViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathViewOutput.swift; sourceTree = "<group>"; };
 		4338A957215E9BF600A621BF /* MockBreathInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathInteractorInput.swift; sourceTree = "<group>"; };
 		4338A959215E9BFF00A621BF /* MockBreathInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathInteractorOutput.swift; sourceTree = "<group>"; };
-		4338A95B215E9D3700A621BF /* MockBreathPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreathPresenter.swift; sourceTree = "<group>"; };
 		4338A95D215EA12E00A621BF /* BreathViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewTests.swift; sourceTree = "<group>"; };
 		4338A961215EA16300A621BF /* BreathPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPresenterTests.swift; sourceTree = "<group>"; };
 		4338A963215EA16C00A621BF /* BreathInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInteractorTests.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 				4338A955215E9B4F00A621BF /* MockBreathViewOutput.swift */,
 				4338A957215E9BF600A621BF /* MockBreathInteractorInput.swift */,
 				4338A959215E9BFF00A621BF /* MockBreathInteractorOutput.swift */,
-				4338A95B215E9D3700A621BF /* MockBreathPresenter.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -472,7 +469,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4338A964215EA16C00A621BF /* BreathInteractorTests.swift in Sources */,
-				4338A95C215E9D3700A621BF /* MockBreathPresenter.swift in Sources */,
 				4338A950215E8FF300A621BF /* CountdownTests.swift in Sources */,
 				4338A958215E9BF600A621BF /* MockBreathInteractorInput.swift in Sources */,
 				4338A954215E99C000A621BF /* MockBreathViewInput.swift in Sources */,
