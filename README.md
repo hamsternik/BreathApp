@@ -1,6 +1,10 @@
-**Breath Animation Demo
+# Breath Animation Demo
 
-***How to run
+## Description
+
+A following test case to evaluate the iOS engineering skills.
+
+## How to run
 
 * open your most preffered terminal and run `pod install`
-* open `.xcworkspace` file via the Xcode and run the app
+* open file with the __.xcworkspace__ extension via an Xcode and run the app
