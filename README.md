@@ -1,5 +1,8 @@
 # Breath Animation Demo
 
+[![Build Status](https://travis-ci.com/hamsternik/BreathApp.svg?branch=master)](https://travis-ci.com/hamsternik/BreathApp) 
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout)](https://github.com/hamsternik/BreathApp/blob/master/LICENSE)
+
 ## Description
 
 A following test case to evaluate the iOS engineering skills.
@@ -12,5 +15,3 @@ A following test case to evaluate the iOS engineering skills.
 ## License
 
 BreathApp is available under the MIT license. See the LICENSE file for more info.
-
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout)](https://github.com/hamsternik/BreathApp/blob/master/LICENSE)
