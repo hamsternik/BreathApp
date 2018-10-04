@@ -33,6 +33,9 @@
 		62918F6520E97BE800A7C979 /* BreathPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6420E97BE800A7C979 /* BreathPresenter.swift */; };
 		62918F6720E97C1500A7C979 /* BreathViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6620E97C1500A7C979 /* BreathViewInterface.swift */; };
 		62918F6A20E97CC800A7C979 /* BreathConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62918F6920E97CC800A7C979 /* BreathConfigurator.swift */; };
+		62F92C37216587C3009141FA /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F92C36216587C3009141FA /* Formatter.swift */; };
+		62F92C39216589FB009141FA /* StringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F92C38216589FB009141FA /* StringFormatter.swift */; };
+		62F92C3B21658AC2009141FA /* CountdownTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F92C3A21658AC2009141FA /* CountdownTimeFormatter.swift */; };
 		AE9DBEF69A5EC2C76FBC9288 /* Pods_BreathApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A19EE2CB7952082C78B96E /* Pods_BreathApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		62918F6420E97BE800A7C979 /* BreathPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathPresenter.swift; sourceTree = "<group>"; };
 		62918F6620E97C1500A7C979 /* BreathViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewInterface.swift; sourceTree = "<group>"; };
 		62918F6920E97CC800A7C979 /* BreathConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathConfigurator.swift; sourceTree = "<group>"; };
+		62F92C36216587C3009141FA /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		62F92C38216589FB009141FA /* StringFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatter.swift; sourceTree = "<group>"; };
+		62F92C3A21658AC2009141FA /* CountdownTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimeFormatter.swift; sourceTree = "<group>"; };
 		7CCB2F1D1E5A0D2E112603C5 /* Pods-BreathApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BreathApp/Pods-BreathApp.debug.xcconfig"; sourceTree = "<group>"; };
 		97A19EE2CB7952082C78B96E /* Pods_BreathApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreathApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F48B26FF368FB58FDF34D6 /* Pods-BreathApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreathApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BreathApp/Pods-BreathApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 		4338A92A215C01B000A621BF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				62F92C35216587B1009141FA /* Formatters */,
 				4338A92D215C050C00A621BF /* Action.swift */,
 				4338A92B215C01BC00A621BF /* Countdown.swift */,
 				4338A937215D513400A621BF /* DispatchQueue+Extensions.swift */,
@@ -315,6 +322,16 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		62F92C35216587B1009141FA /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				62F92C36216587C3009141FA /* Formatter.swift */,
+				62F92C38216589FB009141FA /* StringFormatter.swift */,
+				62F92C3A21658AC2009141FA /* CountdownTimeFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
 		63BCE1F1A06A971955323A69 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,7 +511,10 @@
 				4338A92C215C01BC00A621BF /* Countdown.swift in Sources */,
 				4338A91D215BD4E900A621BF /* AnimationPhase.swift in Sources */,
 				4338A931215C1B7E00A621BF /* BreathViewState.swift in Sources */,
+				62F92C39216589FB009141FA /* StringFormatter.swift in Sources */,
 				62918F4820E96B6800A7C979 /* AppDelegate.swift in Sources */,
+				62F92C37216587C3009141FA /* Formatter.swift in Sources */,
+				62F92C3B21658AC2009141FA /* CountdownTimeFormatter.swift in Sources */,
 				4313C7B421602ABB00E75C1D /* BreathingSquaredViewModelBuilder.swift in Sources */,
 				4338A927215BF1C400A621BF /* BreathInteractorInterface.swift in Sources */,
 			);
