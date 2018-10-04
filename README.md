@@ -5,7 +5,7 @@
 
 A following test case to evaluate the iOS engineering skills.
 
-![](Demo/demo.gif)
+<img src="Demo/demo.gif" width="128">
 
 ## How to run
 
