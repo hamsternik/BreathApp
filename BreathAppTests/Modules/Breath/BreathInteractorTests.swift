@@ -18,6 +18,12 @@ class BreathInteractorTests: XCTestCase {
     var sut: BreathInteractorInput!
     var output: MockBreathInteractorOutput!
     
+    let mockedAnimationPhases: [AnimationPhase] = [
+        AnimationPhase(type: .exhale, duration: 0.1, color: "#FF00FF"),
+        AnimationPhase(type: .hold, duration: 0.2, color: "#00FFFF"),
+        AnimationPhase(type: .inhale, duration: 0.3, color: "#FFFF00")
+    ]
+    
     override func setUp() {
         super.setUp()
         sut = BreathInteractor()
@@ -56,42 +62,43 @@ class BreathInteractorTests: XCTestCase {
         )
     }
     
-    func test_executeAnimations() {
-        let didFinishExecuteAllAnimationsExpectation = XCTestExpectation(description: "All animations was executed successfully")
+    func test_executeAnimations_didExecuteAnimationPhase() {
         let didExecuteExhaleAnimationPhaseExpectation = XCTestExpectation(description: "Exhale animation has been executed successfully")
         let didExecuteHoldAnimationPhaseExpectation = XCTestExpectation(description: "Hold animation has been executed successfully")
         let didExecuteInhaleAnimationPhaseExpectation = XCTestExpectation(description: "Inhale animation has been executed successfully")
         
-        let mockedAnimationPhases: [AnimationPhase] = [
-            AnimationPhase(type: .exhale, duration: 0.1, color: "#FF00FF"),
-            AnimationPhase(type: .hold, duration: 0.2, color: "#00FFFF"),
-            AnimationPhase(type: .inhale, duration: 0.3, color: "#FFFF00")
-        ]
-        
-        output.didFinishExecuteAllAnimationsObserver = {
-            didFinishExecuteAllAnimationsExpectation.fulfill()
-        }
-        
         output.didExecuteAnimationPhaseObserver = { animation in
-            // XCTAssertTrue(mockedAnimationPhases.contains(animation), "\(animation.type.rawValue) animation got from mockedAnimationPhases.")
-
             switch animation.type {
             case .exhale: didExecuteExhaleAnimationPhaseExpectation.fulfill()
             case .hold: didExecuteHoldAnimationPhaseExpectation.fulfill()
             case .inhale: didExecuteInhaleAnimationPhaseExpectation.fulfill()
             }
         }
-        
+    
         sut.execute(animations: mockedAnimationPhases)
         
         wait(
             for: [
-                didFinishExecuteAllAnimationsExpectation,
                 didExecuteExhaleAnimationPhaseExpectation,
                 didExecuteHoldAnimationPhaseExpectation,
                 didExecuteInhaleAnimationPhaseExpectation
             ],
             timeout: mockedAnimationPhases.duration + Constants.tresholdTimeInterval
+        )
+    }
+    
+    func test_executeAnimations_didFinishExecuteAllAnimations() {
+        let didFinishExecuteAllAnimationsExpectation = XCTestExpectation(description: "All animations was executed successfully")
+        
+        output.didFinishExecuteAllAnimationsObserver = {
+            didFinishExecuteAllAnimationsExpectation.fulfill()
+        }
+        
+        sut.execute(animations: mockedAnimationPhases)
+        
+        wait(
+            for: [didFinishExecuteAllAnimationsExpectation],
+            timeout: 1.0
         )
     }
 }
