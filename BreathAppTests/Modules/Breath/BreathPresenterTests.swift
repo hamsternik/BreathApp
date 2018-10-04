@@ -17,7 +17,7 @@ class BreathPresenterTests: XCTestCase {
     
     var sut: BreathPresenter!
     var view: MockBreathViewInput!
-    var interactor: MockBreathInteractorInput!
+    var interactor: MockBreathInteractorInput!t
     
     let mockedAnimationPhases: [AnimationPhase] = [
         AnimationPhase(type: .exhale, duration: 0.1, color: "#FF00FF"),
