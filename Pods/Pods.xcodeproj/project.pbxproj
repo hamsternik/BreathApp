@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C48E32B9D22B597FA5DFC0066F01964 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7E63C4A22B2161B7B9C1270132878E /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17DABB92A6064BBC9BB4F8C733A3DDDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		281B4371FFDFEE82414E346271672847 /* UIColorInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD2C12786586458CA000AB6B32FF8E /* UIColorInputError.swift */; };
-		426C28918FA6C22C5CCA5CFF8ACB9D6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		61A824F07EB4B8C3F64E9BF67E94D584 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3D362D5E9A1E066544F8B78D42041 /* UIColorExtension.swift */; };
-		70BCCCF3A9F337B938D757B8D7AD8324 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC646D766DF6E1E7B1ECED5A1DFBB780 /* UIColor_Hex_Swift-dummy.m */; };
-		926727C0F9A0FD92BD13FB1F58221A87 /* Pods-BreathApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49809A153E11B943BE4B11045D198C04 /* Pods-BreathApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E89C2EDA4CD325F463589B7D81121C3 /* Pods-BreathApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A0CBE3CFDCB50B69448F767DBB371 /* Pods-BreathApp-dummy.m */; };
-		9EC2F59657DF5412385B0A712CDDC51F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C58B776BD2AEFDBB092D0D980AB647 /* StringExtension.swift */; };
-		CC4D1A43755C82BBA776A057BECECD2C /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3B767FAD0801CD0DAE0567CE1B5275 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FCDB063CE085DD3F3E7B6CBAD22CD6EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		39B8106F0C232F198D84C2F0AEC7294F /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC646D766DF6E1E7B1ECED5A1DFBB780 /* UIColor_Hex_Swift-dummy.m */; };
+		42B50739F42BB5D1CF8338455EF5658C /* Pods-BreathApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C27A0CBE3CFDCB50B69448F767DBB371 /* Pods-BreathApp-dummy.m */; };
+		4569284507755BEAA06D7BF4833D7705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		4AFE91C2F535780420FD6F10FBE86C96 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3B767FAD0801CD0DAE0567CE1B5275 /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D3BF9E407A543688819F2D079EC1B0F /* Pods-BreathApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49809A153E11B943BE4B11045D198C04 /* Pods-BreathApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5131B899FB395C7F28B36EA1A1C35C7A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C58B776BD2AEFDBB092D0D980AB647 /* StringExtension.swift */; };
+		5191498373B569E2F0B844D5D9FD6D84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		94FDFA49B206ADEA55B901B34AB4F615 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		ACE7366A06223823C99241E9A1A8EC2A /* UIColorInputError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BD2C12786586458CA000AB6B32FF8E /* UIColorInputError.swift */; };
+		C06711911C175EC277B015822E8C022B /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7E63C4A22B2161B7B9C1270132878E /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFE6C97C58DB8D213A509216EB749401 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3D362D5E9A1E066544F8B78D42041 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		48676BD9081B075BEA67B253A04DEAEF /* PBXContainerItemProxy */ = {
+		A7F47D1797119A6A0A86116BD54D091E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94066017CD59838542CF7C15BA15E962;
+			remoteGlobalIDString = 78B53D320CD5DC3A2FD62EF065538277;
 			remoteInfo = UIColor_Hex_Swift;
 		};
 /* End PBXContainerItemProxy section */
@@ -59,20 +59,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28E4D3E1B1810F553A4A164597671C66 /* Frameworks */ = {
+		B5A23502E1F5657950391D9FF982737B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				426C28918FA6C22C5CCA5CFF8ACB9D6E /* Foundation.framework in Frameworks */,
-				FCDB063CE085DD3F3E7B6CBAD22CD6EF /* UIKit.framework in Frameworks */,
+				4569284507755BEAA06D7BF4833D7705 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5577E349C8E1268A6E75CDA582D724B7 /* Frameworks */ = {
+		E0155B12F1A79AD9E5472FA30EEB97B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DABB92A6064BBC9BB4F8C733A3DDDC /* Foundation.framework in Frameworks */,
+				5191498373B569E2F0B844D5D9FD6D84 /* Foundation.framework in Frameworks */,
+				94FDFA49B206ADEA55B901B34AB4F615 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,51 +180,34 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2247BEB6A161CAC5531215B400E0A14E /* Headers */ = {
+		36FD806EDB50CCC12B71FC0C3AB598A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4D1A43755C82BBA776A057BECECD2C /* HEXColor.h in Headers */,
-				0C48E32B9D22B597FA5DFC0066F01964 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+				4AFE91C2F535780420FD6F10FBE86C96 /* HEXColor.h in Headers */,
+				C06711911C175EC277B015822E8C022B /* UIColor_Hex_Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B013541C1A6CD7BC0EB4FF32D7E6015 /* Headers */ = {
+		5F658940D35F5B4A708FE705F35CFB90 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926727C0F9A0FD92BD13FB1F58221A87 /* Pods-BreathApp-umbrella.h in Headers */,
+				4D3BF9E407A543688819F2D079EC1B0F /* Pods-BreathApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		634DA91C569372892B4137D89C0FBC70 /* Pods-BreathApp */ = {
+		78B53D320CD5DC3A2FD62EF065538277 /* UIColor_Hex_Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90311A7D534227BF14B76C980C2D305 /* Build configuration list for PBXNativeTarget "Pods-BreathApp" */;
+			buildConfigurationList = AB2149955179C8BAC5A144DC46C3D56F /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
 			buildPhases = (
-				95BABBCFAF7FE803C78FEFC357BADD29 /* Sources */,
-				5577E349C8E1268A6E75CDA582D724B7 /* Frameworks */,
-				7B013541C1A6CD7BC0EB4FF32D7E6015 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A91DA645E9BCFDB2B9E8B66D2BD6213 /* PBXTargetDependency */,
-			);
-			name = "Pods-BreathApp";
-			productName = "Pods-BreathApp";
-			productReference = 7F8FBED577876311B205AFCAEF8C06B3 /* Pods_BreathApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		94066017CD59838542CF7C15BA15E962 /* UIColor_Hex_Swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1ECC47BCE57C93B046E5C27AD842123C /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
-			buildPhases = (
-				6F2F1639C642BE44387EA1B171DBEC91 /* Sources */,
-				28E4D3E1B1810F553A4A164597671C66 /* Frameworks */,
-				2247BEB6A161CAC5531215B400E0A14E /* Headers */,
+				36FD806EDB50CCC12B71FC0C3AB598A5 /* Headers */,
+				49E10D206A573F934B28650B27EDCE0B /* Sources */,
+				E0155B12F1A79AD9E5472FA30EEB97B0 /* Frameworks */,
+				C4C3E5FD99E84A1D93673317222C2CD0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +216,25 @@
 			name = UIColor_Hex_Swift;
 			productName = UIColor_Hex_Swift;
 			productReference = 621D99C4226661E2168E97F07A97654F /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8392044B03CF7CD93027B6BAF107164 /* Pods-BreathApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774A9F7612BAF6F22C238229D719AC17 /* Build configuration list for PBXNativeTarget "Pods-BreathApp" */;
+			buildPhases = (
+				5F658940D35F5B4A708FE705F35CFB90 /* Headers */,
+				43FC3476ED6B1034B1784220292D5821 /* Sources */,
+				B5A23502E1F5657950391D9FF982737B /* Frameworks */,
+				B9B44565C4540A85F34C0B2774CE76DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				872818C97EF30D964FF5194DCBF3375A /* PBXTargetDependency */,
+			);
+			name = "Pods-BreathApp";
+			productName = "Pods-BreathApp";
+			productReference = 7F8FBED577876311B205AFCAEF8C06B3 /* Pods_BreathApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -256,142 +258,64 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				634DA91C569372892B4137D89C0FBC70 /* Pods-BreathApp */,
-				94066017CD59838542CF7C15BA15E962 /* UIColor_Hex_Swift */,
+				B8392044B03CF7CD93027B6BAF107164 /* Pods-BreathApp */,
+				78B53D320CD5DC3A2FD62EF065538277 /* UIColor_Hex_Swift */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		6F2F1639C642BE44387EA1B171DBEC91 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		B9B44565C4540A85F34C0B2774CE76DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EC2F59657DF5412385B0A712CDDC51F /* StringExtension.swift in Sources */,
-				70BCCCF3A9F337B938D757B8D7AD8324 /* UIColor_Hex_Swift-dummy.m in Sources */,
-				61A824F07EB4B8C3F64E9BF67E94D584 /* UIColorExtension.swift in Sources */,
-				281B4371FFDFEE82414E346271672847 /* UIColorInputError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		95BABBCFAF7FE803C78FEFC357BADD29 /* Sources */ = {
+		C4C3E5FD99E84A1D93673317222C2CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43FC3476ED6B1034B1784220292D5821 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E89C2EDA4CD325F463589B7D81121C3 /* Pods-BreathApp-dummy.m in Sources */,
+				42B50739F42BB5D1CF8338455EF5658C /* Pods-BreathApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E10D206A573F934B28650B27EDCE0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5131B899FB395C7F28B36EA1A1C35C7A /* StringExtension.swift in Sources */,
+				39B8106F0C232F198D84C2F0AEC7294F /* UIColor_Hex_Swift-dummy.m in Sources */,
+				CFE6C97C58DB8D213A509216EB749401 /* UIColorExtension.swift in Sources */,
+				ACE7366A06223823C99241E9A1A8EC2A /* UIColorInputError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A91DA645E9BCFDB2B9E8B66D2BD6213 /* PBXTargetDependency */ = {
+		872818C97EF30D964FF5194DCBF3375A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UIColor_Hex_Swift;
-			target = 94066017CD59838542CF7C15BA15E962 /* UIColor_Hex_Swift */;
-			targetProxy = 48676BD9081B075BEA67B253A04DEAEF /* PBXContainerItemProxy */;
+			target = 78B53D320CD5DC3A2FD62EF065538277 /* UIColor_Hex_Swift */;
+			targetProxy = A7F47D1797119A6A0A86116BD54D091E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+		63EEF651BF0A3498084AD0A3E2058E2D /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		75ED6246C0531113DB559D419A656262 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D57948BA4F78090C72A970F474768FAC /* UIColor_Hex_Swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
-				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
-				PRODUCT_NAME = UIColor_Hex_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		829903BFE6C73A06977D2527EB30F824 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F98DFE50B2EC139C67B8A9191492CD6 /* Pods-BreathApp.debug.xcconfig */;
+			baseConfigurationReference = 76FA2FA36D17B4A97445A37E513E40B5 /* Pods-BreathApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -421,15 +345,54 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+		7C8F71AF64F39B5692DFF9C7C91E0D33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D57948BA4F78090C72A970F474768FAC /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_Hex_Swift;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -483,7 +446,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -492,7 +456,66 @@
 			};
 			name = Debug;
 		};
-		C09E6C5D13DDFBA22A6CBE34A76CFB9D /* Debug */ = {
+		B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CD5FCE923207059D7975F076540ABD31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D57948BA4F78090C72A970F474768FAC /* UIColor_Hex_Swift.xcconfig */;
 			buildSettings = {
@@ -528,9 +551,9 @@
 			};
 			name = Debug;
 		};
-		C37985960D1D05C53BA285A5B347A2EF /* Release */ = {
+		EFD5E6B1D918A13C37D67BD7DB1CFF05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76FA2FA36D17B4A97445A37E513E40B5 /* Pods-BreathApp.release.xcconfig */;
+			baseConfigurationReference = 3F98DFE50B2EC139C67B8A9191492CD6 /* Pods-BreathApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -560,40 +583,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1ECC47BCE57C93B046E5C27AD842123C /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C09E6C5D13DDFBA22A6CBE34A76CFB9D /* Debug */,
-				75ED6246C0531113DB559D419A656262 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
-				08638A96A528B1EC32DE62F8A728389D /* Release */,
+				8C3D32AC054F4DBEE82EB2FD6A303D73 /* Debug */,
+				B751CA5B597BFC35A6C0287C65F9E2E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90311A7D534227BF14B76C980C2D305 /* Build configuration list for PBXNativeTarget "Pods-BreathApp" */ = {
+		774A9F7612BAF6F22C238229D719AC17 /* Build configuration list for PBXNativeTarget "Pods-BreathApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				829903BFE6C73A06977D2527EB30F824 /* Debug */,
-				C37985960D1D05C53BA285A5B347A2EF /* Release */,
+				EFD5E6B1D918A13C37D67BD7DB1CFF05 /* Debug */,
+				63EEF651BF0A3498084AD0A3E2058E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2149955179C8BAC5A144DC46C3D56F /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5FCE923207059D7975F076540ABD31 /* Debug */,
+				7C8F71AF64F39B5692DFF9C7C91E0D33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

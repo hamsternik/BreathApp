@@ -1,0 +1,8 @@
+osx_image: xcode10
+language: swift
+branches:
+  only:
+    - master
+
+script:
+  - fastlane ios test
