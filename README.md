@@ -5,6 +5,8 @@
 
 A following test case to evaluate the iOS engineering skills.
 
+<img src="Demo/demo.gif" width="180">
+
 ## How to run
 
 * Write in your most preffered terminal `pod install` command and wait when all third-party dependencies will be installed
