@@ -50,7 +50,7 @@ class BreathingSquaredViewModelBuilder {
         
         return BreathingSquaredViewModel(
             animationTypeText: "\(animationPhase.type.rawValue)".uppercased(),
-            remainingTime: animationPhase.duration,
+            duration: BreathingSquaredViewModel.Duration(value: animationPhase.duration, mode: .enable),
             scaleFactor: animationPhaseType(animationPhase.type),
             backgroundColor: UIColor(animationPhase.color, defaultColor: .white)
         )

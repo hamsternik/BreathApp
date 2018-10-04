@@ -10,8 +10,19 @@ import UIKit
 
 struct BreathingSquaredViewModel {
     
+    struct Duration {
+        
+        enum DisplayMode {
+            case disable, enable
+        }
+        
+        var value: TimeInterval
+        var mode: DisplayMode
+        
+    }
+    
     var animationTypeText: String?
-    var remainingTime: TimeInterval?
+    var duration: Duration?
     var scaleFactor: CGFloat?
     var backgroundColor: UIColor?
     
@@ -19,13 +30,13 @@ struct BreathingSquaredViewModel {
     
     init(
         animationTypeText: String?,
-        remainingTime: TimeInterval?,
+        duration: Duration?,
         scaleFactor: CGFloat?,
         backgroundColor: UIColor?,
         remainingTimeFormatter: AnyStringFormatter<TimeInterval> = AnyStringFormatter(CountdownTimeFormatter())
     ) {
         self.animationTypeText = animationTypeText
-        self.remainingTime = remainingTime
+        self.duration = duration
         self.scaleFactor = scaleFactor
         self.backgroundColor = backgroundColor
         self.remainingTimeFormatter = remainingTimeFormatter
@@ -44,8 +55,16 @@ extension BreathingSquaredViewModel {
     
     func apply(on view: BreathViewInput) {
         view.setAnimationType(animationTypeText)
-        remainingTime.map { applyRemainingTime($0, on: view) }
-        scaleFactor.map { view.setAnimationScaleFactor($0, duration: remainingTime ?? 0.0) }
+        
+        if let duration = duration {
+            switch duration.mode {
+            case .enable: applyRemainingTime(duration.value, on: view)
+            case .disable: view.setAnimationRemainingTime(nil)
+            }
+            
+            scaleFactor.map { view.setAnimationScaleFactor($0, duration: duration.value) }
+        }
+        
         backgroundColor.map { view.setAnimationColor($0) }
     }
     

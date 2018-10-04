@@ -22,7 +22,7 @@ extension BreathingSquaredViewModel {
     
     static let idleStateViewModel = BreathingSquaredViewModel(
         animationTypeText: "tap here\n to breath".uppercased(),
-        remainingTime: nil,
+        duration: nil,
         scaleFactor: nil,
         backgroundColor: UIColor("#FFFC79", defaultColor: .yellow)
     )
@@ -30,7 +30,7 @@ extension BreathingSquaredViewModel {
     static func transitionViewStateViewModel(scale: CGFloat, duration: TimeInterval, color: UIColor) -> BreathingSquaredViewModel {
         return BreathingSquaredViewModel(
             animationTypeText: nil,
-            remainingTime: duration,
+            duration: BreathingSquaredViewModel.Duration(value: duration, mode: .disable),
             scaleFactor: scale,
             backgroundColor: color
         )
