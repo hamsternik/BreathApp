@@ -5,7 +5,7 @@
 
 A following test case to evaluate the iOS engineering skills.
 
-<img src="Demo/demo.gif" width="128">
+<img src="Demo/demo.gif" width="180">
 
 ## How to run
 
